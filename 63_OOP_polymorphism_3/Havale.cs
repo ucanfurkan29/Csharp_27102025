@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _63_OOP_polymorphism_3
+{
+    internal class Havale : BankaSistemi
+    {
+        public override void ParaGonder(int tutar)
+        {
+            base.ParaGonder(tutar);
+        }
+    }
+}
