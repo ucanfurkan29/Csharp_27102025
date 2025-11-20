@@ -27,31 +27,58 @@
                         Ekrana ürünün adını, ham fiyatını, KDV tutarını ve KDV dahil toplam fiyatını yazdırın.
              */
 
-            /*Banka Ödeme Simülasyonu (Parametreli & Mantıksal Polymorphism)
-                Senaryo: Bir alışveriş sitemiz var. Müşteri 1000 TL'lik bir ürün alıyor. Ancak ödeme ekranında seçtiği yönteme göre bankaların kestiği komisyon oranları veya ek hizmet bedelleri değişiyor.
 
-                Sizden OdemeYontemi adında bir yapı kurmanız ve aşağıdaki kuralları uygulamanız isteniyor:
 
-                Teknik İsterler:
-                    Base Class (OdemeYontemi):
-                        OdemeYap(double tutar) isimli virtual bir metodu olsun.
-                        Bu metot varsayılan olarak: "Ödeme başarıyla alındı. Tutar: [Tutar]" yazsın ve geriye işlemden sonraki net tutarı (değiştirmeden) döndürsün.
-                    Sub Classes (Türeyen Sınıflar):
-                        KrediKarti: Banka %5 komisyon almaktadır.
-                        OdemeYap metodunu override edin.
-                        Girilen tutarın %5 fazlasını hesaplayıp ekrana "Kredi Kartı ile ödeniyor. %5 Banka Komisyonu Eklendi." yazsın.
-                        Geriye komisyonlu tutarı döndürsün.
-                        KapidaOdeme: Kargo şirketi sabit 20 TL hizmet bedeli almaktadır.
-                        OdemeYap metodunu override edin.
-                        Girilen tutara 20 TL ekleyip ekrana "Kapıda Ödeme seçildi. +20 TL Hizmet Bedeli yansıtıldı." yazsın.
-                        Geriye yeni tutarı döndürsün.
-                        Masterpass (Kampanyalı): Bu yöntemde %0 komisyon vardır.
-                        Base class'taki metodu olduğu gibi kullansın (Override etmeye gerek yok, veya base'i çağırıp ek mesaj verebilir).
-                    Main Metodu:
-                    Sepet tutarı 1000 TL olsun.
-                    Bu 3 ödeme yöntemini bir listede tutun.
-                    Döngü ile her bir yöntemi çalıştırın ve müşterinin cebinden çıkacak Son Tutarı ekrana yazdırın.
-             */
+
+            Elektronik laptop = new Elektronik();
+            laptop.Ad = "Macbook";
+            laptop.HamFiyat = 30000;
+
+            Gida hamburger = new Gida();
+            hamburger.Ad = "cheeseburger";
+            hamburger.HamFiyat = 100;
+
+            Urun kitap = new Urun();
+            kitap.Ad = "C# Programming";
+            kitap.HamFiyat = 150;
+
+            Urun[] urunler = { laptop, hamburger, kitap };
+            foreach (var urun in urunler)
+            {
+                double kdvTutar = urun.KdvHesapla();
+                double toplamFiyat = urun.HamFiyat + kdvTutar;
+                Console.WriteLine($"Ürün Adı: {urun.Ad}");
+                Console.WriteLine($"Ham Fiyat: {urun.HamFiyat} TL");
+                Console.WriteLine($"KDV Tutarı: {kdvTutar} TL");
+                Console.WriteLine($"KDV Dahil Toplam Fiyat: {toplamFiyat} TL");
+                Console.WriteLine("--------------------------------------------------");
+            }
+        }
+    }
+
+    class Urun 
+    { 
+        public string Ad { get; set; }
+        public double HamFiyat { get; set; }
+
+        public virtual double KdvHesapla()
+        {
+            return HamFiyat * 0.18;
+        }
+    }
+    class Elektronik : Urun
+    {
+        public override double KdvHesapla()
+        {
+            return HamFiyat * 0.25;
+        }
+    }
+
+    class Gida : Urun
+    {
+        public override double KdvHesapla()
+        {
+            return HamFiyat * 0.08;
         }
     }
 }
