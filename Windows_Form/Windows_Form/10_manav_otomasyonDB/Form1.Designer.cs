@@ -1,4 +1,4 @@
-﻿namespace _08_MavanOtomasyon
+﻿namespace _10_manav_otomasyonDB
 {
     partial class Form1
     {
@@ -184,7 +184,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(453, 33);
+            label2.Location = new Point(311, 33);
             label2.Name = "label2";
             label2.Size = new Size(140, 15);
             label2.TabIndex = 7;
@@ -220,9 +220,9 @@
             // 
             lstMusteri.FormattingEnabled = true;
             lstMusteri.ItemHeight = 15;
-            lstMusteri.Location = new Point(453, 66);
+            lstMusteri.Location = new Point(311, 66);
             lstMusteri.Name = "lstMusteri";
-            lstMusteri.Size = new Size(260, 154);
+            lstMusteri.Size = new Size(402, 154);
             lstMusteri.TabIndex = 3;
             // 
             // lstManavUrunler
@@ -261,7 +261,6 @@
             btn_cikis.TabIndex = 1;
             btn_cikis.Text = "Çıkış";
             btn_cikis.UseVisualStyleBackColor = true;
-            btn_cikis.Click += btn_cikis_Click;
             // 
             // Form1
             // 
