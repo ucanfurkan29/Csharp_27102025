@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Manav_Otomasyon_AI", "09
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_manav_otomasyonDB", "10_manav_otomasyonDB\10_manav_otomasyonDB.csproj", "{A3CC6785-08DA-4550-A41F-7AF3D83EFBFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_manav_otomasyonEF", "11_manav_otomasyonEF\11_manav_otomasyonEF.csproj", "{0767E5FF-6F45-4F4C-B1BE-BD7922022ABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{A3CC6785-08DA-4550-A41F-7AF3D83EFBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3CC6785-08DA-4550-A41F-7AF3D83EFBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3CC6785-08DA-4550-A41F-7AF3D83EFBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0767E5FF-6F45-4F4C-B1BE-BD7922022ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0767E5FF-6F45-4F4C-B1BE-BD7922022ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0767E5FF-6F45-4F4C-B1BE-BD7922022ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0767E5FF-6F45-4F4C-B1BE-BD7922022ABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
