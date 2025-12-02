@@ -40,7 +40,7 @@ namespace _11_manav_otomasyonEF.Migrations
 
                     b.HasIndex("UrunID");
 
-                    b.ToTable("ManavStoklar");
+                    b.ToTable("ManavStoklar", (string)null);
                 });
 
             modelBuilder.Entity("_11_manav_otomasyonEF.Models.Satis", b =>
@@ -64,7 +64,7 @@ namespace _11_manav_otomasyonEF.Migrations
 
                     b.HasKey("SatisID");
 
-                    b.ToTable("Satislar");
+                    b.ToTable("Satislar", (string)null);
                 });
 
             modelBuilder.Entity("_11_manav_otomasyonEF.Models.Urun", b =>
@@ -87,7 +87,7 @@ namespace _11_manav_otomasyonEF.Migrations
 
                     b.HasKey("UrunID");
 
-                    b.ToTable("Urunler");
+                    b.ToTable("Urunler", (string)null);
                 });
 
             modelBuilder.Entity("_11_manav_otomasyonEF.Models.ManavStok", b =>
