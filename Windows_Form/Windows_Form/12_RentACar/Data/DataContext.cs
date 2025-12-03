@@ -13,6 +13,7 @@ namespace _12_RentACar.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=204-HOCAPC1;Database=RentACarDb;uid=sa;pwd=1;TrustServerCertificate=true");
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)//ilişkileri kurmak için kullanılır
         {

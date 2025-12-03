@@ -87,6 +87,7 @@
             btn_kiralamalar.TabIndex = 3;
             btn_kiralamalar.Text = "Kiralamalar";
             btn_kiralamalar.UseVisualStyleBackColor = true;
+            btn_kiralamalar.Click += btn_kiralamalar_Click;
             // 
             // dtg_arabalar
             // 
@@ -131,6 +132,7 @@
             btn_hesapla.TabIndex = 13;
             btn_hesapla.Text = "Hesapla";
             btn_hesapla.UseVisualStyleBackColor = true;
+            btn_hesapla.Click += btn_hesapla_Click;
             // 
             // btn_kirala
             // 
@@ -140,6 +142,7 @@
             btn_kirala.TabIndex = 12;
             btn_kirala.Text = "Kirala";
             btn_kirala.UseVisualStyleBackColor = true;
+            btn_kirala.Click += btn_kirala_Click;
             // 
             // txt_toplamTutar
             // 
