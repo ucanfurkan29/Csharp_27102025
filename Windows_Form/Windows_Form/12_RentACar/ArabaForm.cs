@@ -147,7 +147,7 @@ namespace _12_RentACar
 
         private void btn_kiralamalar_Click(object sender, EventArgs e)
         {
-            KiralamaForm kiralama = new KiralamaForm();
+            KiralamaForm kiralama = new KiralamaForm(_musteri);
             kiralama.Show();
             this.Hide();
         }

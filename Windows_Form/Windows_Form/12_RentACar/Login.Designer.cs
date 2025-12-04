@@ -87,7 +87,7 @@
             txt_GirisSifre.PlaceholderText = "Password";
             txt_GirisSifre.Size = new Size(159, 26);
             txt_GirisSifre.TabIndex = 3;
-            txt_GirisSifre.Text = "12345";
+            txt_GirisSifre.Text = "123456";
             // 
             // txt_GirisTel
             // 
@@ -96,7 +96,7 @@
             txt_GirisTel.PlaceholderText = "Phone Number";
             txt_GirisTel.Size = new Size(159, 26);
             txt_GirisTel.TabIndex = 2;
-            txt_GirisTel.Text = "5102208329";
+            txt_GirisTel.Text = "05102208329";
             // 
             // label2
             // 
